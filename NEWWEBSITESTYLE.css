@@ -1,0 +1,385 @@
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #ED563B;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff744f;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   HEADER & NAVIGATION
+   ========================================================= */
+header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo img {
+  height: 60px;
+  margin: 10px 0;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin: 10px 15px;
+}
+
+.nav a {
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ED563B;
+}
+
+/* =========================================================
+   HERO VIDEO SECTION
+   ========================================================= */
+.main-banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.caption {
+  color: #fff;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.caption h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ED563B;
+}
+
+.caption h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.caption em {
+  color: #ED563B;
+  font-style: normal;
+}
+
+/* =========================================================
+   SECTIONS & HEADINGS
+   ========================================================= */
+.section {
+  padding: 80px 0;
+}
+
+.section-heading {
+  margin-bottom: 50px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.section-heading em {
+  color: #ED563B;
+  font-style: normal;
+}
+
+.section-heading img {
+  margin: 20px 0;
+}
+
+/* =========================================================
+   FEATURED JOBS SECTION
+   ========================================================= */
+.trainer-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.trainer-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.image-thumb img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.down-content {
+  padding: 25px;
+}
+
+.down-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.down-content p {
+  color: #666;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ED563B;
+  color: #fff;
+  border: 2px solid #ED563B;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #ED563B;
+}
+
+.btn-secondary {
+  border: 2px solid #ED563B;
+  color: #ED563B;
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #ED563B;
+  color: #fff;
+}
+
+/* =========================================================
+   ABOUT US SECTION
+   ========================================================= */
+.section-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.section-bg h2 em {
+  color: #ED563B;
+}
+
+/* =========================================================
+   CALL TO ACTION
+   ========================================================= */
+#call-to-action {
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+#call-to-action .cta-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-content em {
+  color: #ED563B;
+  font-style: normal;
+}
+
+/* =========================================================
+   FOOTER SECTION
+   ========================================================= */
+footer {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 60px 0 20px 0;
+  font-size: 15px;
+  border-top: 1px solid #ddd;
+}
+
+footer .btn {
+  background-color: #ED563B;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+footer .btn-outline-primary {
+  background: transparent;
+  color: #ED563B;
+  border: 2px solid #ED563B;
+}
+
+footer .btn:hover {
+  opacity: 0.85;
+}
+
+.footer-links a {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ED563B;
+}
+
+.social-icons a {
+  font-size: 18px;
+  color: #333;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ED563B;
+}
+
+.contact-info {
+  font-size: 15px;
+  color: #555;
+}
+
+.contact-info i {
+  color: #ED563B;
+}
+
+footer .border-top {
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  color: #777;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ED563B;
+}
+
+/* PAYMENT ICONS */
+.payments img {
+  height: 35px;
+  margin-right: 12px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  filter: grayscale(20%);
+}
+
+.payments img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 0.9;
+}
+
+/* =========================================================
+   RESPONSIVE STYLES
+   ========================================================= */
+@media (max-width: 991px) {
+  .caption h2 {
+    font-size: 32px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .footer-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer .col-lg-6 {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn-primary, .btn-secondary {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
